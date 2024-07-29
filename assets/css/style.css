@@ -32,6 +32,9 @@ h5,
 h6 {
     font-family: "Raleway", sans-serif !important;
 }
+main{
+    overflow-x: hidden;
+}
 
 .faq-content {
     display: none;
