@@ -991,9 +991,9 @@
 
                 <div class="bg-white shadow m-t-30 p-4" id="contact" data-bs-spy="scroll" data-bs-target="#contact"
                     data-bs-smooth-scroll="true">
-                    <form action="" method="post">
+                    <form action="https://api.web3forms.com/submit" method="POST">
                         <div class="row gy-4">
-
+                            <input type="hidden" name="access_key" value="1b97c614-0bbf-4fdf-b1f9-1f5b5d832447">
                             <div class="col-md-6">
                                 <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
                             </div>
@@ -1012,6 +1012,8 @@
                                 <textarea class="form-control" name="message" rows="6" placeholder="Message"
                                     required=""></textarea>
                             </div>
+
+                            <input type="hidden" name="redirect" value="https://web3forms.com/success">
 
                             <div class="col-md-12 text-center">
                                 <button class="p-10-30 btn rounded-pill bg-primary text-white fw-medium"
