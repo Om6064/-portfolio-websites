@@ -1080,19 +1080,19 @@
     <div class="full p-2">
         <ul class=" list ">
             <li class=" nav-link m-b-15 al-line">
-                <a class="al-line m-0 text-body-secondary  line d-block" href="#home">Home</a>
+                <a class="al-line m-0 text-body-secondary  line d-block  tap" href="#home">Home</a>
             </li>
             <li class=" nav-link m-b-15">
-                <a class="m-0 text-body-secondary  line d-block" href="#about">About</a>
+                <a class="m-0 text-body-secondary  line d-block  tap" href="#about">About</a>
             </li>
             <li class=" nav-link m-b-15">
-                <a class="m-0 text-body-secondary line " href="#sarvice">Service</a>
+                <a class="m-0 text-body-secondary line  tap" href="#sarvice">Service</a>
             </li>
             <li class=" nav-link m-b-15">
-                <a class="m-0 text-body-secondary line " href="#blog">Blog</a>
+                <a class="m-0 text-body-secondary line tap" href="#blog">Blog</a>
             </li>
             <li class=" text-body-secondary nav-link m-b-15">
-                <a class="m-0 text-body-secondary line " href="#portfolio">Portfolio</a>
+                <a class="m-0 text-body-secondary line  tap" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item dropdown  text-body-secondary z-3 m-b-15">
                 <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -1107,7 +1107,7 @@
                     <li><a class="dropdown-item" href="#">Dropdown-4</a></li>
                 </ul>
             </li>
-            <li class="text-body-secondary nav-link m-b-15">
+            <li class="text-body-secondary nav-link m-b-15 tap">
                 <a class="m-0 text-body-secondary line" href="#contact">Contact</a>
             </li>
         </ul>
@@ -1167,6 +1167,14 @@
                 $(".full").fadeToggle();
                 $(this).toggleClass("bi-list bi-x-lg")
             })
+            $(".tap").on("click", function(){
+                $(".full").addClass("d-none");
+            })
+            $(".menu-box i").on("click", function(){
+                $(".full").removeClass("d-none");
+            })
+
+
 
 
 
